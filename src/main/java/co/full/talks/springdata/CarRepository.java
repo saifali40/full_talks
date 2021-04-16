@@ -15,8 +15,5 @@ public interface CarRepository extends DatastoreRepository<Car, Long> {
 
     List<Car> findByMeta(String meta);
 
-    @Query("SELECT license FROM Car WHERE id = @id")
-    String findByQuery(String id);
-
     void deleteByVin(String vin);
 }
