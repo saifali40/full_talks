@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    gcp:
+      logging:
+        enabled: true
+      datastore:
+        enabled: true
+        emulator:
+          enabled: true
+  main:
+    allow-bean-definition-overriding: true
